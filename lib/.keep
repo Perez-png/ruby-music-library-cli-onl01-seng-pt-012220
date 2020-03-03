@@ -1,3 +1,8 @@
+require_relative '../config/environment'
+require 'pry'
+require bundler
+Bundler.require
+
 def Song.new("Blank Space").name
   attr_accessor:Name, :Artist, :Genre
   @@all = []
@@ -24,6 +29,12 @@ module Concerns::ModuleName
 
 end
 
+Song.new.all
+Artist.new.all
+Genre.new.all
+
+end
+end
 
 
 
